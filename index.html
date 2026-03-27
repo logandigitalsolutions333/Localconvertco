@@ -4,7 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LocalConvertCo | Turn Clicks Into Customers</title>
-<style>
+<style> form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    cursor: pointer;
+}
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -131,7 +142,30 @@ h1 {
         </div>
     </div>
 </section>
-    
+<section class="section">
+    <h2>Get More Customers</h2>
+    <p style="color:#bbb;">Fill this out and I’ll reach out personally.</p>
+
+    <form name="lead-form" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="lead-form">
+
+        <p>
+            <input type="text" name="name" placeholder="Your Name" required>
+        </p>
+
+        <p>
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        </p>
+
+        <p>
+            <input type="text" name="business" placeholder="Business Name">
+        </p>
+
+        <p>
+            <button type="submit" class="btn">Get More Customers</button>
+        </p>
+    </form>
+</section>    
 <section class="section">
     <h2>Simple, Done-For-You Setup</h2>
     <p style="max-width:600px;margin:auto;color:#bbb;">
