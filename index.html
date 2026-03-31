@@ -40,6 +40,7 @@ h1 { font-size: 2.5em; }
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .section {
@@ -85,9 +86,9 @@ a { color: #00ffae; }
     <p>
         We help local businesses automatically respond to missed calls and follow up with leads using SMS, so you never lose another job.
     </p>
-    <a href="sms:3609574048?body=Hey%20I%27m%20interested%20in%20getting%20more%20customers%20for%20my%20business." class="btn">
+    <button class="btn" onclick="openChatWidget()">
         Text Us To Get Started
-    </a>
+    </button>
 </section>
 
 <section class="section">
@@ -124,11 +125,11 @@ a { color: #00ffae; }
 
 <section class="section">
     <h2>Get More Customers</h2>
-    <p style="color:#bbb;">Tap below and send us a quick text to get started.</p>
+    <p style="color:#bbb;">Tap below to start a conversation with us instantly.</p>
 
-    <a href="sms:3609574048?body=Hey%20I%20just%20saw%20your%20site%20and%20I%27d%20like%20to%20get%20more%20customers%20for%20my%20business." class="btn">
+    <button class="btn" onclick="openChatWidget()">
         Text Us To Get Started
-    </a>
+    </button>
 
     <p style="font-size:12px;color:#888;max-width:400px;margin:20px auto;">
         By contacting LocalConvertCo, you agree to receive SMS messages related to your inquiry. Message frequency varies. Message and data rates may apply. Reply STOP to opt out.
@@ -159,10 +160,23 @@ a { color: #00ffae; }
 <div class="footer">
     © 2026 LocalConvertCo. All rights reserved.
 </div>
+
+<!-- Chat Widget -->
 <script 
   src="https://widgets.leadconnectorhq.com/loader.js"  
   data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" 
- data-widget-id="69cc57281c1c14ea9d66fcf2"   > 
- </script>
+  data-widget-id="69cc57281c1c14ea9d66fcf2"> 
+</script>
+
+<script>
+function openChatWidget() {
+    if (window.LCWidget) {
+        LCWidget.show();
+    } else {
+        console.warn("Chat widget not loaded yet.");
+    }
+}
+</script>
+
 </body>
 </html>
