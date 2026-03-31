@@ -24,7 +24,6 @@ h1 { font-size: 2.5em; }
     padding: 80px 20px;
     text-align: center;
 }
-.hero h2 { font-size: 2em; }
 .hero p {
     color: #bbb;
     max-width: 600px;
@@ -47,39 +46,13 @@ h1 { font-size: 2.5em; }
     text-align: center;
 }
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background: #1a1a1a;
-    padding: 25px;
-    border-radius: 10px;
-    max-width: 300px;
-}
-
-.card h3 { color: #00ffae; }
-
-form input {
-    width: 80%;
-    max-width: 400px;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: none;
-}
-
-form button { cursor: pointer; }
-
 .footer {
     padding: 20px;
     text-align: center;
     background: #111;
     color: #777;
 }
+a { color: #00ffae; }
 </style>
 </head>
 
@@ -92,59 +65,45 @@ form button { cursor: pointer; }
 <section class="hero">
     <h2>Never Miss Another Customer Again</h2>
     <p>
-        We help local businesses automatically respond to missed calls and follow up with leads using SMS, so you never lose another job.
+        We help local businesses automatically respond to missed calls and follow up with leads using SMS communication systems.
     </p>
-    <a href="tel:3609574048" class="btn">Get More Customers</a>
-</section>
-
-<section class="section">
-    <h2>What We Do</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Missed Call Text Back</h3>
-            <p>Automatically text customers when you miss a call so they don’t go to your competitor.</p>
-        </div>
-        <div class="card">
-            <h3>Lead Follow-Up</h3>
-            <p>Instant SMS replies to capture and convert more leads into paying customers.</p>
-        </div>
-        <div class="card">
-            <h3>Automation</h3>
-            <p>We install systems that work 24/7 to bring in and convert new business.</p>
-        </div>
-    </div>
+    <a href="sms:3609574048?body=Hey%20I%27m%20interested%20in%20getting%20more%20customers%20for%20my%20business." class="btn">
+        Text Us To Get Started
+    </a>
 </section>
 
 <section class="section">
     <h2>How It Works</h2>
     <p style="max-width:600px;margin:auto;color:#bbb;">
-        When a customer calls and you miss it, they instantly receive a text message from your business. This keeps them engaged and dramatically increases your chances of booking the job.
+        When a customer calls and you miss it, they instantly receive a text message from your business. This helps capture leads and increase conversions.
     </p>
 </section>
 
 <section class="section">
-    <h2>Get More Customers</h2>
-    <p style="color:#bbb;">Fill this out and I’ll reach out personally.</p>
-
-    <form name="lead-form" method="POST" data-netlify="true">
-        <input type="hidden" name="form-name" value="lead-form">
-
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        <input type="text" name="business" placeholder="Business Name">
-
-        <p style="font-size:12px;color:#888;max-width:400px;margin:auto;">
-            By submitting this form, you consent to receive SMS messages from LocalConvertCo related to your inquiry. Message frequency varies. Reply STOP to unsubscribe.
-        </p>
-
-        <button type="submit" class="btn">Get More Customers</button>
-    </form>
+    <h2>SMS Communication Disclosure</h2>
+    <p style="max-width:600px;margin:auto;color:#bbb;">
+        By contacting LocalConvertCo, you consent to receive SMS messages related to your inquiry, including responses to missed calls and follow-up communication. Message frequency may vary. Message and data rates may apply. Reply STOP to opt out at any time.
+    </p>
 </section>
 
 <section class="section">
-    <h2>Why It Matters</h2>
+    <h2>Accessibility Statement</h2>
     <p style="max-width:600px;margin:auto;color:#bbb;">
-        Most customers call multiple businesses. If you don’t respond instantly, you lose the job. Our system ensures you’re always first to respond.
+        We are committed to ensuring our website is accessible to all users, including individuals with disabilities. We strive to follow accessibility best practices and improve usability for everyone.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Privacy Policy</h2>
+    <p style="max-width:600px;margin:auto;color:#bbb;">
+        We respect your privacy. Any information submitted through this website is used solely to respond to your inquiry and provide services. We do not sell or share your information with third parties.
+    </p>
+</section>
+
+<section class="section">
+    <h2>Terms & Conditions</h2>
+    <p style="max-width:600px;margin:auto;color:#bbb;">
+        By using this website and contacting us, you agree to receive communication related to our services. We reserve the right to update or modify our services at any time.
     </p>
 </section>
 
