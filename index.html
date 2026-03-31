@@ -3,19 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LocalConvertCo | Turn Clicks Into Customers</title>
-<style> form input {
-    width: 80%;
-    max-width: 400px;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: none;
-}
+<title>LocalConvertCo | Never Miss a Customer Again</title>
 
-form button {
-    cursor: pointer;
-}
+<style>
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -28,22 +18,19 @@ header {
     background: #111;
     border-bottom: 1px solid #222;
 }
-h1 {
-    font-size: 2.5em;
-}
+h1 { font-size: 2.5em; }
+
 .hero {
     padding: 80px 20px;
     text-align: center;
 }
-.hero h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-}
+.hero h2 { font-size: 2em; }
 .hero p {
     color: #bbb;
     max-width: 600px;
     margin: auto;
 }
+
 .btn {
     display: inline-block;
     margin-top: 30px;
@@ -54,30 +41,44 @@ h1 {
     font-weight: bold;
     border-radius: 5px;
 }
+
 .section {
     padding: 60px 20px;
     text-align: center;
 }
+
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
+
 .card {
     background: #1a1a1a;
     padding: 25px;
     border-radius: 10px;
     max-width: 300px;
 }
+
+.card h3 { color: #00ffae; }
+
+form input {
+    width: 80%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+}
+
+form button { cursor: pointer; }
+
 .footer {
     padding: 20px;
     text-align: center;
     background: #111;
     color: #777;
-}
-.card h3 {
-    color: #00ffae;
 }
 </style>
 </head>
@@ -89,64 +90,38 @@ h1 {
 </header>
 
 <section class="hero">
-    <h2>Turn Your Website Into a Customer-Generating Machine</h2>
+    <h2>Never Miss Another Customer Again</h2>
     <p>
-        We help local businesses get more calls, more bookings, and more customers with high-converting websites and automated follow-ups.
+        We help local businesses automatically respond to missed calls and follow up with leads using SMS, so you never lose another job.
     </p>
     <a href="tel:3609574048" class="btn">Get More Customers</a>
-</section>
-   
-<section class="section">
-    <h2>Built for Local Businesses</h2>
-    <p style="max-width:600px;margin:auto;color:#bbb;">
-        Whether you're a contractor, barber, gym owner, or service business — your website should be bringing you customers every single day.
-    </p>
 </section>
 
 <section class="section">
     <h2>What We Do</h2>
     <div class="cards">
         <div class="card">
-            <h3>Website Design</h3>
-            <p>Modern, fast, mobile-first websites built to convert — not just look good.</p>
+            <h3>Missed Call Text Back</h3>
+            <p>Automatically text customers when you miss a call so they don’t go to your competitor.</p>
         </div>
         <div class="card">
-            <h3>Lead Capture</h3>
-            <p>Forms, funnels, and landing pages that turn visitors into real leads.</p>
+            <h3>Lead Follow-Up</h3>
+            <p>Instant SMS replies to capture and convert more leads into paying customers.</p>
         </div>
         <div class="card">
             <h3>Automation</h3>
-            <p>Missed call texts, follow-ups, and reminders so you never lose a customer again.</p>
+            <p>We install systems that work 24/7 to bring in and convert new business.</p>
         </div>
     </div>
 </section>
 
 <section class="section">
-    <h2>Why LocalConvertCo?</h2>
+    <h2>How It Works</h2>
     <p style="max-width:600px;margin:auto;color:#bbb;">
-        Most websites just sit there. Ours work 24/7 to bring in customers, follow up automatically, and increase your revenue without extra effort.
+        When a customer calls and you miss it, they instantly receive a text message from your business. This keeps them engaged and dramatically increases your chances of booking the job.
     </p>
 </section>
 
-<section class="section">
-  <section class="section">
-    
-    <h2>What You Can Expect</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>More Calls</h3>
-            <p>Turn visitors into real inbound calls.</p>
-        </div>
-        <div class="card">
-            <h3>More Bookings</h3>
-            <p>Convert traffic into scheduled jobs.</p>
-        </div>
-        <div class="card">
-            <h3>Less Missed Leads</h3>
-            <p>Automated follow-ups so no opportunity is lost.</p>
-        </div>
-    </div>
-</section>
 <section class="section">
     <h2>Get More Customers</h2>
     <p style="color:#bbb;">Fill this out and I’ll reach out personally.</p>
@@ -154,31 +129,24 @@ h1 {
     <form name="lead-form" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="lead-form">
 
-        <p>
-            <input type="text" name="name" placeholder="Your Name" required>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        <input type="text" name="business" placeholder="Business Name">
+
+        <p style="font-size:12px;color:#888;max-width:400px;margin:auto;">
+            By submitting this form, you consent to receive SMS messages from LocalConvertCo related to your inquiry. Message frequency varies. Reply STOP to unsubscribe.
         </p>
 
-        <p>
-            <input type="tel" name="phone" placeholder="Your Phone Number" required>
-        </p>
-
-        <p>
-            <input type="text" name="business" placeholder="Business Name">
-        </p>
-
-        <p>
-            <button type="submit" class="btn">Get More Customers</button>
-        </p>
+        <button type="submit" class="btn">Get More Customers</button>
     </form>
-</section>    
+</section>
+
 <section class="section">
-    <h2>Simple, Done-For-You Setup</h2>
+    <h2>Why It Matters</h2>
     <p style="max-width:600px;margin:auto;color:#bbb;">
-        We design, build, and optimize your website so it consistently brings in new customers — without you lifting a finger.
+        Most customers call multiple businesses. If you don’t respond instantly, you lose the job. Our system ensures you’re always first to respond.
     </p>
-    <a href="sms:3609574048?body=Hey I saw your site and want more customers" class="btn">
-Text Me To Get Started
-</a>
+</section>
 
 <div class="footer">
     © 2026 LocalConvertCo. All rights reserved.
